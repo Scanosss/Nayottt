@@ -1,0 +1,159 @@
+
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Nav bar ----------------------------------------------------------------------------------------------*/
+nav {
+  display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+  justify-content: space-between; /* ให้โลโก้อยู่ทางซ้าย และเมนูอยู่ทางขวา */
+  align-items: center; /* จัดให้องค์ประกอบในแนวตั้งกลาง */
+  background-color: #333; /* สีพื้นหลังของ navbar */
+  padding: 20px 40px; /* ระยะห่างบน-ล่างและซ้ายขวาของ navbar */
+
+}
+
+.logo a {
+  text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+  color: white; /* สีข้อความของโลโก้ */
+  font-size: 24px; /* ขนาดฟอนต์ของโลโก้ */
+  font-weight: bold;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar a:hover {
+  color: yellow; 
+  background-color: transparent; 
+  transform: scale(1.05);
+  
+}
+
+.navbar li {
+  margin: 0 15px; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; 
+  font-size: 18px;
+  padding: 8px 16px;
+  display: block;
+  transition: color 0.3s ease; 
+}
+/* Nav bar */
+
+
+
+/* Banner ----------------------------------------------------------------------------------------------*/
+.banner {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+}
+/* Banner */
+
+
+
+/* Datashow ----------------------------------------------------------------------------------------------*/
+
+
+.portfolio {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: grid; /* ใช้ CSS Grid layout */
+  grid-template-columns: repeat(2, 2fr); /* 2 คอลัมน์ในแต่ละแถว */
+  gap: 20px; /* ระยะห่างระหว่างรายการ */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%; /* ปรับขนาดให้เหมาะสมกับคอนเทนเนอร์ */
+  height: 100%;
+  max-width: 220px; /* ไม่ให้ภาพเกิน 450px */
+  height: 430px; /* ปรับความสูงตามสัดส่วนของภาพ */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 15px; /* ทำให้ขอบรูปมีความโค้ง */
+  
+}
+.portfolio-item:hover img{
+  transform: scale(1.01); /* ทำให้รูปขยายขึ้น */
+  
+}
+
+.pj-sub{
+  padding: 15px;
+}
+
+.project-title {
+  display: flex;
+  margin-left: 2rem;
+  padding: 10px;
+  justify-content: left;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Datashow */
+
+.foot{
+  padding-top: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* grid ----------------------------------------------------------------------------------------------*/
+
+.grid{
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 2rem;
+}
+
+.line{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.separator{ 
+  border-top: 1px solid /* line เส้นขีด */
+}
+.foot-bar{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.foot-bar a{
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+  font-size: 18px;
+  padding: 8px 16px;
+  display: block;
+  transition: color 0.3s ease; 
+}
+.foot-bar a:hover {
+  color: yellow; 
+  background-color: transparent; 
+}
+/* grid */

@@ -1,0 +1,139 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Nav bar ----------------------------------------------------------------------------------------------*/
+nav {
+  display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+  justify-content: space-between; /* ให้โลโก้อยู่ทางซ้าย และเมนูอยู่ทางขวา */
+  align-items: center; /* จัดให้องค์ประกอบในแนวตั้งกลาง */
+  background-color: #333; /* สีพื้นหลังของ navbar */
+  padding: 20px 40px; /* ระยะห่างบน-ล่างและซ้ายขวาของ navbar */
+
+}
+
+.logo a {
+  text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+  color: white; /* สีข้อความของโลโก้ */
+  font-size: 24px; /* ขนาดฟอนต์ของโลโก้ */
+  font-weight: bold;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar a:hover {
+  color: yellow; 
+  background-color: transparent; 
+  transform: scale(1.05);
+  
+}
+
+.navbar li {
+  margin: 0 15px; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; 
+  font-size: 18px;
+  padding: 8px 16px;
+  display: block;
+  transition: color 0.3s ease; 
+}
+/* Nav bar */
+
+
+
+/* aboutme ----------------------------------------------------------------------------------------------*/
+.container{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+}
+.aboutme{
+  display: grid; /* ใช้ CSS Grid layout */
+  grid-template-columns: repeat(2, 2fr); /* 2 คอลัมน์ในแต่ละแถว */
+  gap: 40px; /* ระยะห่างระหว่างรายการ */
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 126px;
+  padding-right: 126px;
+}
+.center{
+  padding: 1REM 1rem;
+}
+.center img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  box-shadow: 0 0 15px;
+
+}
+/* aboutme */
+
+/* edu ----------------------------------------------------------------------------------------------*/
+.edu{
+  padding-left: 126px;
+  padding-right: 126px;
+  
+  display: flex;
+  justify-content: center;
+}
+.textedu{
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 3rem;
+  text-align: left;
+  width: 630px;
+}
+
+/* edu */
+
+
+
+
+.foot{
+  padding-top: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* grid ----------------------------------------------------------------------------------------------*/
+
+.grid{
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 2rem;
+}
+.line{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.separator{ 
+  border-top: 1px solid /* line เส้นขีด */
+}
+.foot-bar{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.foot-bar a{
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+  font-size: 18px;
+  padding: 8px 16px;
+  display: block;
+  transition: color 0.3s ease; 
+}
+.foot-bar a:hover {
+  color: yellow; 
+  background-color: transparent; 
+}
+/* grid */
