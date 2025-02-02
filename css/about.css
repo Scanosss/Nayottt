@@ -74,8 +74,14 @@ nav {
   height: 100%;
   border-radius: 20%;
   box-shadow: 0 0 15px;
-
 }
+.textme {
+  max-width: 800px;
+  margin: 0 auto; /* Center the text */
+  line-height: 1.8; /* เพิ่มระยะห่างระหว่างบรรทัดเพื่อให้อ่านง่ายขึ้น */
+}
+
+
 /* aboutme */
 
 /* edu ----------------------------------------------------------------------------------------------*/
@@ -144,11 +150,55 @@ nav {
 }
 /* grid */
 @media (max-width: 768px) {
-  .container {
-    padding: 20px;
-  }
+  /* Navbar - จัดให้อยู่ในแนวตั้งและปรับขนาด */
   .navbar {
     display: flex;
     flex-direction: column;
+    align-items: center; /* ให้เมนูอยู่กลาง */
+  }
+  
+  .navbar li {
+    margin: 10px 0; /* เพิ่มระยะห่างระหว่างเมนู */
+  }
+  
+  .navbar a {
+    font-size: 16px; /* ปรับขนาดฟอนต์ให้เล็กลง */
+    padding: 12px 20px; /* ปรับขนาดปุ่ม */
+  }
+
+  /* Portfolio layout - เปลี่ยนจาก 3 คอลัมน์เป็น 1 คอลัมน์ */
+  .container {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็นแค่ 1 คอลัมน์ */
+    gap: 20px;
+  }
+
+  /* ปรับขนาดของรูปภาพให้เหมาะสมบนมือถือ */
+  .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    /* เอาขนาดสูงสุดและปรับความสูงอัตโนมัติ */
+  }
+
+  /* ปรับขนาดของข้อความและการจัดตำแหน่ง */
+  .project-title {
+    font-size: 16px;
+    margin-left: 0; /* ลบ margin-left ที่ใช้ในขนาดใหญ่ */
+    padding: 10px;
+  }
+
+  /* เพิ่ม padding ให้กับ banner */
+  .banner {
+    padding: 2rem; /* ลด padding ให้เหมาะสม */
+  }
+  
+  /* กรณีของ footer link */
+  .foot-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot-bar a {
+    font-size: 16px;
+    margin: 5px 0; /* เพิ่มระยะห่างระหว่างลิงก์ */
   }
 }
