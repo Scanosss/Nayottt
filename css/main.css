@@ -59,6 +59,20 @@ nav {
   display: flex;
   justify-content: center;
 }
+/* contact-con  */
+.contact-con{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr)
+
+}
+.cutebox img{
+  width: 460px;
+  height: 350px;
+  border-radius: 20%;
+  box-shadow: 0 0 15px;
+}
+/* contact end */
+
 /* Banner */
 
 
@@ -73,7 +87,7 @@ nav {
 
 .container {
   display: grid; /* ใช้ CSS Grid layout */
-  grid-template-columns: repeat(2, 2fr); /* 2 คอลัมน์ในแต่ละแถว */
+  grid-template-columns: repeat(3, 2fr); /* 2 คอลัมน์ในแต่ละแถว */
   gap: 20px; /* ระยะห่างระหว่างรายการ */
   max-width: 900px;
   margin: 0 auto;
@@ -138,6 +152,12 @@ nav {
 .separator{ 
   border-top: 1px solid /* line เส้นขีด */
 }
+.click a{
+  text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+  color: rgb(0, 0, 0); /* สีข้อความของโลโก้ */
+  font-size: 14px; /* ขนาดฟอนต์ของโลโก้ */
+
+}
 .foot-bar{
   display: flex;
   margin: 0;
@@ -157,3 +177,12 @@ nav {
   background-color: transparent; 
 }
 /* grid */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
