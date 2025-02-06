@@ -244,4 +244,21 @@ nav {
     margin: 0; /* ลบ margin */
     padding: 0 10px; /* เพิ่ม padding ให้อ่านง่ายขึ้น */
   }
+  a {
+    font-size: 14px;
+    margin: 5px 0; /* เพิ่มระยะห่างระหว่างลิงก์ */
+  }
+  .textme {
+    font-size: 14px;  /* ลดขนาดฟอนต์ */
+    line-height: 1.6; /* ปรับระยะห่างระหว่างบรรทัดให้ดีขึ้น */
+  }
+
+  /* ปรับขนาดของข้อความใน education และ skills */
+  h4 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;  /* ลดขนาดหัวเรื่องในมือถือ */
+  }
 }
